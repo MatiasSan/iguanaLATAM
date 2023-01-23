@@ -1,0 +1,174 @@
+/* Normalización */
+
+/*  1. Use a more-intuitive box-sizing model. */
+*,
+*/ *::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+/* Fin Normalización */
+
+:root {
+  --clr-blanco: #ffffff;
+  --clr-negroF: #000000;
+  --clr-section: #1e1a13;
+
+  --ff-base: "Raleway", sans-serif;
+
+  --fw-medium: 400;
+  --fw-light: 100;
+}
+
+/* general body */
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-medium);
+  color: var(--clr-blanco);
+  background-color: var(--clr-negroF);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 1;
+  font-weight: var(--fw-medium);
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: var(--fw-medium);
+  font-size: 40px;
+  padding-top: 75px;
+  font-size: 150%;
+}
+
+p {
+  font-weight: var(--fw-light);
+  font: normal normal 300 16px/19px Raleway;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--clr-section);
+  padding: 3%;
+  opacity: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--clr-blanco);
+  font-weight: lighter;
+}
+
+.seccion_1 {
+  width: 50%;
+}
+.caracteristicas {
+  background-color: var(--clr-section);
+  text-align: center;
+}
+
+.contenedor-icono {
+  display: inline-block;
+  margin: 40px;
+  text-align: center;
+}
+
+/* imagenes */
+
+.iguana-1 {
+  width: 399px;
+  height: 237px;
+  display: inline-flex;
+}
+
+.galeria {
+  width: 14rem;
+  height: 10rem;
+  display: inline-block;
+  padding: 5%;
+}
+
+.contenedor-parrafo {
+  width: 50%;
+  float: left;
+}
+
+.contenedor-img {
+  width: 50%;
+  display: inline-block;
+  margin-top: 45px;
+}
+
+.caracteristica-parrafo {
+  margin-left: 100px;
+  margin-right: 50px;
+  font-size: 60%;
+  margin-top: 76px;
+}
+.footer_p {
+  font: normal normal 300 20px/24px Raleway;
+  font-size: small;
+}
